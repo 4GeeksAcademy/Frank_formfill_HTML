@@ -29,14 +29,18 @@
             <input type="Card #" class="form-control" id="fullname" name="Card #">
         </div>
         <div class="mb-3 col-4">
-            <label for="CVS" class="form-label">CVS</label>
+            <label for="CVS" class="form-label"><CVS#></CVS></label>
             <input type="CVS" class="form-control" id="CVS" name="CVS">
           </div>
           <div class="mb-3 col-4">
             <label for="Amount" class="form-label">Amount</label>
-           <div class="d-flex"><stong>$</stong><input type="Amount" class="form-control" id="Amount" name="Amount">
+            <div class="d-flex">
+                <strong>$</strong>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Amount">
+
+            </div>
         </div>
-    </div>
+        
        
         <div class="row">
             <div class="col">
@@ -52,9 +56,13 @@
                 <input type="City" class="form-control" id="City" name="City">
             </div>
             <div class="mb-3 col-4">
-                <label for="State" class="form-label">State</label>
-                <input type="State" class="form-control" id="State" name="State">
+              <label for="State" class="form-label">State</label>
+              <div class="input-group">
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Pick a state">
+                  <span class="input-group-text"><i class="fa-solid fa-sort"></i></span>
               </div>
+          </div>
+          
               <div class="mb-3 col-4">
                 <label for="Postal Code" class="form-label">Postal Code</label>
                 <input type="Amount" class="form-control" id="Postal Code" name="Postal Code">
@@ -85,16 +93,21 @@
             <label for="message" class="form-label">Message</label>
             <textarea class="form-control" id="message" name="message" rows="4"></textarea>
             <p2>Add any notes here.</p2>
-            <div class="row">
-              <div class="col-6">
-                <div class="col-6 d-flex justify-content">
-                  <button class="btn btn-secondary">Cancel</button>
-                  <button class="btn btn-primary float-right">Send</button>
-              </div>        
-            </div>
-              
+            
           </div>
-        </div> 
+        </div>  
+        <div class="d-flex justify-content-end">
+          <div class="buttons-container">
+              <button type="button" class="btn btn-secondary btn-sm">Cancel</button>
+              <button type="button" class="btn btn-primary btn-sm">Send</button>
+          </div>
+      </div>
+      
+         
+
+          
+               
+        </div>
          
       </div>
             </div>
